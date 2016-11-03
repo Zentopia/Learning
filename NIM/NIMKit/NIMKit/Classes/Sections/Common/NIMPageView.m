@@ -7,6 +7,7 @@
 //
 
 #import "NIMPageView.h"
+#import "Xtrace.h"
 
 @interface NIMPageView ()
 {

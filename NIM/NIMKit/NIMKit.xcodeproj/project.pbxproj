@@ -167,6 +167,8 @@
 		3C7E4E9E840A60A82333013C /* NIMNetCallMeeting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMNetCallMeeting.h; path = ./NIMKit/Vendors/NIMAVChat/ExportHeaders/NIMNetCallMeeting.h; sourceTree = SOURCE_ROOT; };
 		40CC411B9D8172AE365528EB /* NIMConversationManagerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMConversationManagerProtocol.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/Protocol/NIMConversationManagerProtocol.h; sourceTree = SOURCE_ROOT; };
 		48564E66A9FD7A411AFAE4F0 /* NIMLoginClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMLoginClient.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/NIMLoginClient.h; sourceTree = SOURCE_ROOT; };
+		4998FFE71D89288500FB9E25 /* Xtrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Xtrace.h; sourceTree = "<group>"; };
+		4998FFE81D89288500FB9E25 /* Xtrace.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Xtrace.mm; sourceTree = "<group>"; };
 		4E8F4478A8B0BF341CDEBED6 /* NIMCreateTeamOption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMCreateTeamOption.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/Team/NIMCreateTeamOption.h; sourceTree = SOURCE_ROOT; };
 		50D14472835BC902BEC10D92 /* NIMUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMUser.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/NIMUser.h; sourceTree = SOURCE_ROOT; };
 		517A452A8AB2C7031F2BA82C /* NIMSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NIMSDK.h; path = ./NIMKit/Vendors/NIMSDK/ExportHeaders/NIMSDK.h; sourceTree = SOURCE_ROOT; };
@@ -499,6 +501,15 @@
 			name = MessageObject;
 			path = NIMKit/Vendors/NIMSDK/ExportHeaders/MessageObject;
 			sourceTree = SOURCE_ROOT;
+		};
+		4998FFE61D89288500FB9E25 /* Xtrace */ = {
+			isa = PBXGroup;
+			children = (
+				4998FFE71D89288500FB9E25 /* Xtrace.h */,
+				4998FFE81D89288500FB9E25 /* Xtrace.mm */,
+			);
+			path = Xtrace;
+			sourceTree = "<group>";
 		};
 		5D5C44F0AB1018AFF0C4364A /* ExportHeaders */ = {
 			isa = PBXGroup;
@@ -1038,6 +1049,7 @@
 		E4EF06DE1B7DAFCA006669AC /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				4998FFE61D89288500FB9E25 /* Xtrace */,
 				61D99FE11BAFFA760059D369 /* SVProgressHUD */,
 				61D99FEA1BAFFA760059D369 /* Toast */,
 				E4EF06DF1B7DAFCA006669AC /* M80AttributedLabel */,

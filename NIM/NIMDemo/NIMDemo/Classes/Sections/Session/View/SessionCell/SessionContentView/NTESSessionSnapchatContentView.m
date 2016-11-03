@@ -100,6 +100,8 @@ NSString *const NIMDemoEventNameCloseSnapPicture = @"NIMDemoEventNameCloseSnapPi
     }
 }
 
+//Mark: event handle
+
 - (void)goOpen{
     if ([self.delegate respondsToSelector:@selector(onCatchEvent:)]) {
         NIMKitEvent *event = [[NIMKitEvent alloc] init];
