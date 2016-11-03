@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  UTTableViewCell.h
 //  Test
 //
 //  Created by Utopia on 2016/10/25.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface UTTableViewCell : UITableViewCell
 
++ (CGSize)cellSize;
+
+- (void)loadData:(NSDictionary *)data;
 
 @end
-

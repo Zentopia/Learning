@@ -1,29 +1,28 @@
 //
-//  MainTableViewCell.m
-//  Test
+//  UTSingleLabelTableViewCell.m
+//  YZWaimaiMerchants
 //
-//  Created by Utopia on 2016/10/25.
+//  Created by Utopia on 2016/10/26.
 //  Copyright © 2016年 Utopia. All rights reserved.
 //
 
-#import "MainTableViewCell.h"
+#import "UTSingleLabelTableViewCell.h"
 
 #define TITLE_LABEL_HEIGHT 40
 
-@interface MainTableViewCell()
+@interface UTSingleLabelTableViewCell()
 
 @property (strong, nonatomic)UILabel *titleLabel;
+@property (copy, nonatomic)NSString *title;
 
 @end
 
-@implementation MainTableViewCell
+@implementation UTSingleLabelTableViewCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         [self createView];
-        [self setNeedsUpdateConstraints];
     }
-    
     return self;
 }
 
@@ -32,7 +31,12 @@
 }
 
 - (void)setAutolayout{
-    self.titleLabel
+    [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo(TITLE_LABEL_HEIGHT);
+        make.centerY.mas_equalTo(self.contentView);
+        make.left.mas_equalTo(self.contentView.mas_left).offset(16);
+        make.right.mas_lessThanOrEqualTo(self.contentView.mas_right).offset(-10);
+    }];
 }
 
 + (BOOL)requiresConstraintBasedLayout{
@@ -40,9 +44,8 @@
 }
 
 - (void)updateConstraints{
-
-    [self setAutolayout];
     
+    [self setAutolayout];
     [super updateConstraints];
 }
 
@@ -51,6 +54,15 @@
         _titleLabel = [UILabel new];
     }
     return _titleLabel;
+}
+
+- (void)loadData:(NSDictionary *)data{
+    self.title = [data objectForKey:@"title"];
+    self.titleLabel.text = self.title;
+}
+
++ (CGSize)cellSize{
+    return CGSizeMake(UTScreenWidth, TITLE_LABEL_HEIGHT + 10 + 10);
 }
 
 /*

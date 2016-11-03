@@ -7,6 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import "UTNavigationController.h"
+#import "UTTabBarController.h"
+#import "FirstViewController.h"
+#import "SecondViewController.h"
+#import "ThirdViewController.h"
+#import "FourthViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +23,64 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self createKeyWindow];
+    [self loadViewControllers];
+    
     return YES;
+}
+
+- (void)createKeyWindow{
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window makeKeyAndVisible];
+}
+
+- (void)loadViewControllers{
+    UTViewController *firstViewController = [[FirstViewController alloc] init];
+    UIViewController *firstNavigationController = [[UTNavigationController alloc]
+                                                   initWithRootViewController:firstViewController];
+    
+    UTViewController *secondViewController = [[SecondViewController alloc] init];
+    UIViewController *secondNavigationController = [[UTNavigationController alloc]
+                                                    initWithRootViewController:secondViewController];
+    
+    UTViewController *thirdViewController = [[ThirdViewController alloc] init];
+    UIViewController *thirdNavigationController = [[UTNavigationController alloc]initWithRootViewController:thirdViewController];
+    
+    UTTabBarController *tabBarController = [[UTTabBarController alloc] init];
+    
+    [self customizeTabBarForController:tabBarController];
+    
+    [tabBarController setViewControllers:@[
+                                           firstNavigationController,
+                                           secondNavigationController,
+                                           thirdNavigationController,
+                                           ]];
+  
+    self.window.rootViewController = tabBarController;
+    
+}
+
+- (void)customizeTabBarForController:(UTTabBarController *)tabBarController {
+    
+    NSDictionary *dict1 = @{
+                            CYLTabBarItemTitle : NSLocalizedString(@"First", nil),
+                            CYLTabBarItemImage : @"bus_situation_deselect",
+                            CYLTabBarItemSelectedImage : @"bus_situation_select",
+                            };
+    NSDictionary *dict2 = @{
+                            CYLTabBarItemTitle : NSLocalizedString(@"Second", nil),
+                            CYLTabBarItemImage : @"order_deselect",
+                            CYLTabBarItemSelectedImage : @"order_select",
+                            };
+    
+    NSDictionary *dict3 = @{
+                            CYLTabBarItemTitle : NSLocalizedString(@"Third", nil),
+                            CYLTabBarItemImage : @"res_manage_deselect",
+                            CYLTabBarItemSelectedImage : @"res_manage_select",
+                            };
+    
+    NSArray *tabBarItemsAttributes = @[ dict1, dict2, dict3];
+    tabBarController.tabBarItemsAttributes = tabBarItemsAttributes;
 }
 
 
