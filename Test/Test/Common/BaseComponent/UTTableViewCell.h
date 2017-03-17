@@ -8,10 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+
+@interface UTTableViewCellConfigItem: NSObject
+
+@property (strong, nonatomic)NSIndexPath *indexPath;
+
+@end
+
 @interface UTTableViewCell : UITableViewCell
 
+- (void)createView;
+- (void)setAutolayout;
+- (void)loadData:(id)data;
 + (CGSize)cellSize;
-
-- (void)loadData:(NSDictionary *)data;
 
 @end

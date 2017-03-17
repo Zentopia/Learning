@@ -13,6 +13,7 @@
 #import "SecondViewController.h"
 #import "ThirdViewController.h"
 #import "FourthViewController.h"
+#import "ImageHelper.h"
 
 @interface AppDelegate ()
 
@@ -25,8 +26,93 @@
     // Override point for customization after application launch.
     [self createKeyWindow];
     [self loadViewControllers];
+    [self simulateFor];
+    [self print];
+//    [self test];
+    
     
     return YES;
+}
+
+- (void)simulateFor{
+    NSInteger i;
+    i ^= i;
+    
+L4: i++;
+    
+    if (i < 10) goto L4;
+    
+    
+}
+
+- (void)test{
+    
+  
+    for (NSInteger i = 0; i<20; i++) {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            //            [arrayMU addObject:a];
+            //            [WYBtn testMMM:arrayMU];
+            NSArray *aar =  [ImageHelper test:[NSString stringWithFormat:@"%ld", i]];
+//            NSLog(@"%@",aar);
+        });
+    }
+}
+
+- (void)print{
+    
+    NSMutableArray *array = [NSMutableArray arrayWithCapacity:100];
+    NSString *filePath = [[self getPath] stringByAppendingPathComponent:@"utopia.text"];
+    
+    [[NSFileManager defaultManager]createFileAtPath:filePath contents:nil attributes:nil];
+    NSFileHandle* fileHandle = [NSFileHandle fileHandleForWritingAtPath:filePath];
+    
+    NSLog(@"%@", filePath);
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        for (NSInteger i = 1; i < 54; i++) {
+            
+            NSString *str = [NSString stringWithFormat:@"课时 %ld \n", i];
+            [fileHandle writeData:[str dataUsingEncoding:NSUTF8StringEncoding]];//这样就相当于按-a方式写入
+            [fileHandle seekToEndOfFile];//将读写指针设置在文件末尾
+        }
+    });
+
+    
+    // 数组写入文件执行的方法
+//    [array writeToFile:filePath atomically:YES];
+    
+    
+    NSString *resultStr = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+    NSLog(@"resultStr is %@", resultStr);
+    
+    // 从文件中读取数据数组的方法
+//    NSArray *resultArr = [NSArray arrayWithContentsOfFile:filePath];
+//    NSLog(@"%@", resultArr[1]);
+    
+    
+}
+
+- (NSString *)getPath{
+    // 获取Documents目录
+    NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    
+    // 获取tmp目录
+    NSString *tmpPath = NSTemporaryDirectory();
+    
+    // 获取Library目录
+    NSString *libPath = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) lastObject];
+    
+    // 获取Library/Caches目录
+    NSString *cachePath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
+    
+    // 获取Library/Preferences目录
+    NSString *prePath = [NSSearchPathForDirectoriesInDomains(NSPreferencePanesDirectory, NSUserDomainMask, YES) lastObject];
+    //通常情况下，Preferences由系统维护，我们很少去操作TA
+    
+    // 获取应用程序包的路径
+    NSString *path = [NSBundle mainBundle].resourcePath;
+    
+    return docPath;
 }
 
 - (void)createKeyWindow{

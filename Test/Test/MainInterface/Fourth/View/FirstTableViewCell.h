@@ -9,6 +9,12 @@
 #import "UTTableViewCell.h"
 #import "UTSingleLabelTableViewCell.h"
 
+@interface FirstTableViewCellConfigItem : UTSingleLabelTableViewCellConfigItem
+
+@end
+
 @interface FirstTableViewCell : UTSingleLabelTableViewCell
+
+@property (strong, nonatomic)FirstTableViewCellConfigItem *configItem;
 
 @end

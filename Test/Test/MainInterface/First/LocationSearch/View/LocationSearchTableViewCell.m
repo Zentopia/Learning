@@ -1,22 +1,14 @@
 //
-//  FirstTableViewCell.m
+//  LocationSearchTableViewCell.m
 //  Test
 //
-//  Created by Utopia on 2016/11/3.
+//  Created by Utopia on 2016/11/14.
 //  Copyright © 2016年 Utopia. All rights reserved.
 //
 
-#import "FirstTableViewCell.h"
+#import "LocationSearchTableViewCell.h"
 
-@implementation FirstTableViewCellConfigItem
-
-@end
-
-@interface FirstTableViewCell()
-
-@end
-
-@implementation FirstTableViewCell
+@implementation LocationSearchTableViewCell
 
 /*
 // Only override drawRect: if you perform custom drawing.
@@ -25,11 +17,13 @@
     // Drawing code
 }
 */
+- (void)setAutolayout{
+
+}
 
 - (void)loadData:(id)data{
     self.configItem = data;
     self.titleLabel.text = self.configItem.title;
 }
-
 
 @end

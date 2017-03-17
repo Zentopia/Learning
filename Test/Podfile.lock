@@ -28,11 +28,7 @@ PODS:
   - Masonry (1.0.2)
   - MJExtension (3.0.13)
   - MJRefresh (3.1.12)
-  - ReactiveCocoa (5.0.0-alpha.3):
-    - ReactiveSwift (~> 1.0.0-alpha.3)
-  - ReactiveSwift (1.0.0-alpha.3):
-    - Result (~> 3.0)
-  - Result (3.0.0)
+  - OFCocoaTricks (0.0.2)
   - Reveal-SDK (2)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
@@ -52,7 +48,7 @@ DEPENDENCIES:
   - Masonry
   - MJExtension
   - MJRefresh
-  - ReactiveCocoa (from `https://github.com/ReactiveCocoa/ReactiveCocoa.git`)
+  - OFCocoaTricks (from `https://github.com/OpenFibers/OFCocoaTricks.git`, branch `master`)
   - Reveal-SDK
   - SDWebImage (~> 3.8)
   - SVProgressHUD
@@ -61,13 +57,14 @@ DEPENDENCIES:
   - YYModel
 
 EXTERNAL SOURCES:
-  ReactiveCocoa:
-    :git: https://github.com/ReactiveCocoa/ReactiveCocoa.git
+  OFCocoaTricks:
+    :branch: master
+    :git: https://github.com/OpenFibers/OFCocoaTricks.git
 
 CHECKOUT OPTIONS:
-  ReactiveCocoa:
-    :commit: b35d11f361c076f1ea0a6459a676249044450637
-    :git: https://github.com/ReactiveCocoa/ReactiveCocoa.git
+  OFCocoaTricks:
+    :commit: e6a1f4e222266cc6daaf58384cd12f526e4eddba
+    :git: https://github.com/OpenFibers/OFCocoaTricks.git
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
@@ -78,9 +75,7 @@ SPEC CHECKSUMS:
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
-  ReactiveCocoa: 85661a7fcc9412b35f1f8d74d7578978e0e971a4
-  ReactiveSwift: d67b677f9574ba614d94022a88fcf456e77fa515
-  Result: 1b3e431f37cbcd3ad89c6aa9ab0ae55515fae3b6
+  OFCocoaTricks: 4e7c7dac7776567f00cf9a6b71c76ef3ac711957
   Reveal-SDK: 4d36a47c7091843eee525b72219e005b90bbac0b
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
@@ -88,6 +83,6 @@ SPEC CHECKSUMS:
   YTKNetwork: d8493ab5dae11f06c44e354a3c8f77698ab5f4b7
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: dbbc7ef8847eb1edeacdfa19270fba1ae5578bd1
+PODFILE CHECKSUM: 93f52302c456544ef786ef6684a26ee6de1586ab
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0.beta.1

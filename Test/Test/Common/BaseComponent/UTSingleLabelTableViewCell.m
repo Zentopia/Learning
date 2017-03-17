@@ -10,10 +10,11 @@
 
 #define TITLE_LABEL_HEIGHT 40
 
-@interface UTSingleLabelTableViewCell()
+@implementation UTSingleLabelTableViewCellConfigItem
 
-@property (strong, nonatomic)UILabel *titleLabel;
-@property (copy, nonatomic)NSString *title;
+@end
+
+@interface UTSingleLabelTableViewCell()
 
 @end
 
@@ -39,16 +40,6 @@
     }];
 }
 
-+ (BOOL)requiresConstraintBasedLayout{
-    return YES;
-}
-
-- (void)updateConstraints{
-    
-    [self setAutolayout];
-    [super updateConstraints];
-}
-
 - (UILabel *)titleLabel{
     if (!_titleLabel) {
         _titleLabel = [UILabel new];
@@ -56,12 +47,8 @@
     return _titleLabel;
 }
 
-- (void)loadData:(NSDictionary *)data{
-    self.title = [data objectForKey:@"title"];
-    self.titleLabel.text = self.title;
-}
-
 + (CGSize)cellSize{
+
     return CGSizeMake(UTScreenWidth, TITLE_LABEL_HEIGHT + 10 + 10);
 }
 

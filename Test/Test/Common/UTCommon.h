@@ -16,8 +16,8 @@
 #define UTTabBarWidth self.tabBarController.tabBar.bounds.size.width
 #define UTNavigationBarHeight self.navigationController.navigationBar.bounds.size.height
 #define UTStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
-#define WeakObj(o) autoreleasepool{} __weak typeof(o) o##Weak = o;
-#define StrongObj(o) autoreleasepool{} __strong typeof(o) o = o##Weak;
+#define WeakObj(o) autoreleasepool{} __weak typeof(o) o##Weak = o
+#define StrongObj(o) autoreleasepool{} __strong typeof(o) o = o##Weak
 
 //Color
 #define UTBlueColor [UIColor colorWithRed:0.09 green:0.44 blue:0.71 alpha:1]
@@ -30,5 +30,6 @@ static const DDLogLevel ddLogLevel = DDLogLevelAll;
 #import "HexColors.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "NSObject+TCIdentifier.h"
+#import <AFNetworking/AFNetworking.h>
 
 #endif /* UTCommon_h */

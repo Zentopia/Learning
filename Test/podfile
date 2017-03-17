@@ -14,7 +14,8 @@ pod 'YTKNetwork'
 pod 'Reveal-SDK', :configurations => ['Debug']
 pod 'SDWebImage', '~>3.8'
 pod 'MJExtension'
-pod 'ReactiveCocoa', :git => 'https://github.com/ReactiveCocoa/ReactiveCocoa.git'
+pod 'OFCocoaTricks', :git=>'https://github.com/OpenFibers/OFCocoaTricks.git', :branch=>'master'
+
 use_frameworks!
 end
 
