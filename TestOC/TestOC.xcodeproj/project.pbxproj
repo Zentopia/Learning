@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4973BBB01E80DE2F00BA6294 /* EOCAutoDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 4973BBAF1E80DE2F00BA6294 /* EOCAutoDictionary.m */; };
+		498E63001E7BDA6A00C6B452 /* ResolveInstanceMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E62FF1E7BDA6A00C6B452 /* ResolveInstanceMethod.m */; };
 		49A0D5CB1E77E35F00CB1B4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A0D5CA1E77E35F00CB1B4D /* main.m */; };
 		49A0D5D31E77E37400CB1B4D /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A0D5D21E77E37400CB1B4D /* Person.m */; };
 		49A0D5D61E77E38E00CB1B4D /* SimthPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A0D5D51E77E38E00CB1B4D /* SimthPerson.m */; };
@@ -25,6 +27,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4973BBAE1E80DE2F00BA6294 /* EOCAutoDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOCAutoDictionary.h; sourceTree = "<group>"; };
+		4973BBAF1E80DE2F00BA6294 /* EOCAutoDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOCAutoDictionary.m; sourceTree = "<group>"; };
+		498E62FE1E7BDA6A00C6B452 /* ResolveInstanceMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResolveInstanceMethod.h; sourceTree = "<group>"; };
+		498E62FF1E7BDA6A00C6B452 /* ResolveInstanceMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResolveInstanceMethod.m; sourceTree = "<group>"; };
 		49A0D5C71E77E35F00CB1B4D /* TestOC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestOC; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A0D5CA1E77E35F00CB1B4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		49A0D5D11E77E37400CB1B4D /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
@@ -44,6 +50,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4973BBAD1E80D4A100BA6294 /* DynamicMethodResolution */ = {
+			isa = PBXGroup;
+			children = (
+				4973BBAE1E80DE2F00BA6294 /* EOCAutoDictionary.h */,
+				4973BBAF1E80DE2F00BA6294 /* EOCAutoDictionary.m */,
+			);
+			name = DynamicMethodResolution;
+			sourceTree = "<group>";
+		};
 		49A0D5BE1E77E35E00CB1B4D = {
 			isa = PBXGroup;
 			children = (
@@ -63,11 +78,14 @@
 		49A0D5C91E77E35F00CB1B4D /* TestOC */ = {
 			isa = PBXGroup;
 			children = (
+				4973BBAD1E80D4A100BA6294 /* DynamicMethodResolution */,
 				49A0D5CA1E77E35F00CB1B4D /* main.m */,
 				49A0D5D11E77E37400CB1B4D /* Person.h */,
 				49A0D5D21E77E37400CB1B4D /* Person.m */,
 				49A0D5D41E77E38E00CB1B4D /* SimthPerson.h */,
 				49A0D5D51E77E38E00CB1B4D /* SimthPerson.m */,
+				498E62FE1E7BDA6A00C6B452 /* ResolveInstanceMethod.h */,
+				498E62FF1E7BDA6A00C6B452 /* ResolveInstanceMethod.m */,
 			);
 			path = TestOC;
 			sourceTree = "<group>";
@@ -130,8 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				498E63001E7BDA6A00C6B452 /* ResolveInstanceMethod.m in Sources */,
 				49A0D5D61E77E38E00CB1B4D /* SimthPerson.m in Sources */,
 				49A0D5D31E77E37400CB1B4D /* Person.m in Sources */,
+				4973BBB01E80DE2F00BA6294 /* EOCAutoDictionary.m in Sources */,
 				49A0D5CB1E77E35F00CB1B4D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +281,7 @@
 				49A0D5D01E77E35F00CB1B4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

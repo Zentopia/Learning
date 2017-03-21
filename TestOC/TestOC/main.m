@@ -9,19 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "Person.h"
 #import "SimthPerson.h"
+#import "EOCAutoDictionary.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        
-        NSArray *maybeArray = @[@"sdd", @"ssd"];
-        NSArray *array = @[@"ska"];
-        NSArray *arr = @[@"skska", @"skad", @"kakkdw"];
-        
-        if ([maybeArray class] == [NSArray class]) {
-            
-        }
-        
+        EOCAutoDictionary *dic = [EOCAutoDictionary new];
+        dic.date = [NSDate dateWithTimeIntervalSince1970:475372800];
+        NSLog(@"dict.date = %@", dic.date);
     }
     return 0;
 }
