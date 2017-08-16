@@ -7,10 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PersonBuilder.h"
 
 @interface Person : NSObject
 
 @property (copy, nonatomic)NSString *firstName;
 @property (copy, nonatomic)NSString *lastName;
+
+- (instancetype)personWithBlock:(void (^)(PersonBuilder *)) block;
+
+
+@end
+
+@interface Person(FriendShip)
+
+- (void)addFriend:(Person *)person;
 
 @end

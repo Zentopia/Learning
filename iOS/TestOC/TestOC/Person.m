@@ -7,14 +7,20 @@
 //
 
 #import "Person.h"
+#import "PersonBuilder.h"
 
 @implementation Person
 
-- (instancetype)init{
-    if (self = [super init]) {
-        self.lastName = @"";
+- (instancetype)initWithPersonBuilder:(PersonBuilder *)builder{
+    
+    if(self = [super init]){
+        _lastName = builder.lastName;
+        _firstName = builder.firstName;
     }
+    
     return self;
 }
+
+
 
 @end

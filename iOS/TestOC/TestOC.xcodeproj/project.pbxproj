@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4949A1D21E9619860063EDFA /* BDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4949A1D11E9619860063EDFA /* BDataModel.m */; };
+		4949A1D51E9619A00063EDFA /* BNetworkFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 4949A1D41E9619A00063EDFA /* BNetworkFetcher.m */; };
 		4973BBB01E80DE2F00BA6294 /* EOCAutoDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 4973BBAF1E80DE2F00BA6294 /* EOCAutoDictionary.m */; };
+		4979CCAA1E8E245D0083F806 /* PersonBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4979CCA91E8E245D0083F806 /* PersonBuilder.m */; };
 		498E63001E7BDA6A00C6B452 /* ResolveInstanceMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 498E62FF1E7BDA6A00C6B452 /* ResolveInstanceMethod.m */; };
 		49A0D5CB1E77E35F00CB1B4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A0D5CA1E77E35F00CB1B4D /* main.m */; };
 		49A0D5D31E77E37400CB1B4D /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A0D5D21E77E37400CB1B4D /* Person.m */; };
 		49A0D5D61E77E38E00CB1B4D /* SimthPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A0D5D51E77E38E00CB1B4D /* SimthPerson.m */; };
+		49D9C21E1E98544700345633 /* BDataModel+Utopia.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D9C21D1E98544700345633 /* BDataModel+Utopia.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,8 +31,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4949A1D01E9619860063EDFA /* BDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDataModel.h; sourceTree = "<group>"; };
+		4949A1D11E9619860063EDFA /* BDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDataModel.m; sourceTree = "<group>"; };
+		4949A1D31E9619A00063EDFA /* BNetworkFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNetworkFetcher.h; sourceTree = "<group>"; };
+		4949A1D41E9619A00063EDFA /* BNetworkFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNetworkFetcher.m; sourceTree = "<group>"; };
 		4973BBAE1E80DE2F00BA6294 /* EOCAutoDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOCAutoDictionary.h; sourceTree = "<group>"; };
 		4973BBAF1E80DE2F00BA6294 /* EOCAutoDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOCAutoDictionary.m; sourceTree = "<group>"; };
+		4979CCA81E8E245D0083F806 /* PersonBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonBuilder.h; sourceTree = "<group>"; };
+		4979CCA91E8E245D0083F806 /* PersonBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonBuilder.m; sourceTree = "<group>"; };
 		498E62FE1E7BDA6A00C6B452 /* ResolveInstanceMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResolveInstanceMethod.h; sourceTree = "<group>"; };
 		498E62FF1E7BDA6A00C6B452 /* ResolveInstanceMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResolveInstanceMethod.m; sourceTree = "<group>"; };
 		49A0D5C71E77E35F00CB1B4D /* TestOC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestOC; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +47,8 @@
 		49A0D5D21E77E37400CB1B4D /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		49A0D5D41E77E38E00CB1B4D /* SimthPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimthPerson.h; sourceTree = "<group>"; };
 		49A0D5D51E77E38E00CB1B4D /* SimthPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimthPerson.m; sourceTree = "<group>"; };
+		49D9C21C1E98544700345633 /* BDataModel+Utopia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BDataModel+Utopia.h"; sourceTree = "<group>"; };
+		49D9C21D1E98544700345633 /* BDataModel+Utopia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BDataModel+Utopia.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +90,10 @@
 		49A0D5C91E77E35F00CB1B4D /* TestOC */ = {
 			isa = PBXGroup;
 			children = (
+				49EDD0C31E95CDCE00D18B1A /* Delegate */,
 				4973BBAD1E80D4A100BA6294 /* DynamicMethodResolution */,
+				4979CCA81E8E245D0083F806 /* PersonBuilder.h */,
+				4979CCA91E8E245D0083F806 /* PersonBuilder.m */,
 				49A0D5CA1E77E35F00CB1B4D /* main.m */,
 				49A0D5D11E77E37400CB1B4D /* Person.h */,
 				49A0D5D21E77E37400CB1B4D /* Person.m */,
@@ -88,6 +103,19 @@
 				498E62FF1E7BDA6A00C6B452 /* ResolveInstanceMethod.m */,
 			);
 			path = TestOC;
+			sourceTree = "<group>";
+		};
+		49EDD0C31E95CDCE00D18B1A /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				4949A1D01E9619860063EDFA /* BDataModel.h */,
+				4949A1D11E9619860063EDFA /* BDataModel.m */,
+				4949A1D31E9619A00063EDFA /* BNetworkFetcher.h */,
+				4949A1D41E9619A00063EDFA /* BNetworkFetcher.m */,
+				49D9C21C1E98544700345633 /* BDataModel+Utopia.h */,
+				49D9C21D1E98544700345633 /* BDataModel+Utopia.m */,
+			);
+			name = Delegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,11 +176,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49D9C21E1E98544700345633 /* BDataModel+Utopia.m in Sources */,
 				498E63001E7BDA6A00C6B452 /* ResolveInstanceMethod.m in Sources */,
+				4949A1D51E9619A00063EDFA /* BNetworkFetcher.m in Sources */,
 				49A0D5D61E77E38E00CB1B4D /* SimthPerson.m in Sources */,
+				4979CCAA1E8E245D0083F806 /* PersonBuilder.m in Sources */,
 				49A0D5D31E77E37400CB1B4D /* Person.m in Sources */,
 				4973BBB01E80DE2F00BA6294 /* EOCAutoDictionary.m in Sources */,
 				49A0D5CB1E77E35F00CB1B4D /* main.m in Sources */,
+				4949A1D21E9619860063EDFA /* BDataModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
