@@ -1,0 +1,723 @@
+
+***1  Starter
+
+K    Oyster Shooter 5.00,
+K    Edamame 6.00,
+K    Shumai  6.00,
+K    Gyoza  6.00,
+K    Shp & Veg Tem  10.00,
+K    Calamari Tem   8.00,
+K    Vegetable Tem 8.00,
+K    Wasabi Shrimp  13.00,
+KS   Beef Tartaki 9.00,
+S    Tuna Tartaki 14.00,
+S    Tartaki Trio 23.00,
+S    ootoro Tartar 20.00,
+S    Mango Tuna  14.00,
+S    Jalapeno Yell 12.00,
+S    Kani Baba  12.00,
+S    Sushi Spring Roll 10.00,
+KS   Hamachi Kama    14.00,
+S    Hotate Hok Yaki    10.00,
+K    4 Oysters  12.00,
+K    6 Oysters 16.00,
+K   12 Oysters 30.00,
+KS   Saki Crisp 16.00,
+S
+S   Tuna chips  10.00,
+KS  Pizza Kyoto 20.00,
+S   A18- Veg Pizza 10.00,
+S   A19- Uni shooter  5.00,
+K   Chx Tem App  9.00,
+S   Ebi Su 12.00,
+S   Kani Su 8.00,
+S   Tako Su 15.00,
+S   Avo Dumplings 16.00,
+S   Tuna Tulip    15.00,
+S   Sushi Burger   18.00,
+
+S
+S 
+***2 Nigiri
+
+S  S1-Maguro	    6.00,
+S  S2-Sake	        5.50,
+S  S3-Hamachi		6.00,
+S  S4-Unagi	        6.00,
+S  S5-Ebi	  	      5.25,
+S  S6-Hotate	        6.75,
+S  S7-Suzuki	       5.25,
+S  S8-Hirame		 5.25,
+S  S9-Tobiko	    5.25,
+S  S10-Ikura	    5.50, 	
+S  S11-Uni	    6.00, 	
+S  S12-Tako		5.75, 	
+S  S13-Kunnei-Sake	5.75,
+S  S14-Tilapia     5.00,
+S  S15-Saba        5.50,
+S  S16-Kani		12.00,
+S  S18-Shiro Maguro		5.75,
+S  S19-Ika              5.00,
+S  S20-Jap tai fish  9.00,
+S  S21-ootoro  16.00,
+S  S22-Ama Ebi 8.50,
+S  S23-Surf Clam 8.00,
+S  S23-Live Scollop 12.00,
+S  S24-Albacore tuna 6.00,
+S  S25-Spanish Saba  5.75,
+S  S26-Black Sea bass 7.00,
+S  S27-Kobe beef 12.00,
+S  S28-Mirugai  14.00,
+S  S29-Cobia  6.25,
+S  S30-Aji   7.00,
+S  Kanpachi  6.50,
+S  Snapper 6.00,
+S  Chutoro 10.00,
+S  Madai 5.75,
+
+***3  Sashimi
+
+S  Sa Maguro			7.50, 
+S  Sa Sake	  		7.00 ,
+S  Sa Hamachi		        7.50,
+S  Sa Unagi	  		7.50 ,
+S  Sa Ebi			6.75 ,
+S  Sa Hotate			8.25,
+S  Sa Suzuki	 		6.75 ,
+S  Sa Hirame			6.75 ,
+S  Sa Tobiko		        6.75 ,
+S  Sa Ikura	 		7.00 ,
+S  Sa Uni			7.50 ,
+S  Sa Tako	 		7.25 ,
+S  Sa Sm Sake		7.25 ,
+S  Sa Tilapia              6.50,
+S  Sa Saba                  6.50,
+S  Sa Kani		        15.00,
+S  Sa Shiro Maguro		7.25,
+S  Sa Ika               6.50,
+S  Sa ootoro  18.00 
+S  Sa Ama Ebi 10.00,
+S  Sa Live Scollop  14.00,
+S  Sa Albacore Tuna 7.50,
+S  Sa Spanish Saba 7.25,
+S  Sa Aji  8.50,
+S  Sa Kanpachi  8.00,
+S  Sa Snapper  7.50,
+S  Sa Bonito 8.00,
+S  Sa Toro   9.50,
+S  Sa Chutoro 11.50,
+S  Sa madai 7.25,
+X
+X
+X
+X
+X
+***4  Set Menu
+
+S	Nigiri Del	  28, 
+S	Sashimi Del	34,
+KS	Maki Del	28,
+S	Nigiri Sashimi	38,
+S	Party 1	        46,
+KS	Party 2	      	78 ,
+KS	Party 3	        99 ,
+S    Chef's Choice  M/P,
+
+X
+X
+
+***5   Maki A
+
+S	Sp Tuna		9.00 ,
+S	Sp Salmon		7.50 ,
+S	Sp Yellowtail		8.00, 
+S	Sp Scallop		8.50,
+S	Crunchy Mk		6.00 ,
+S	Tuna Avo		8.00 ,
+S	Salmon Avo		7.50 ,
+S	Unagi Avo		7.50,
+S	California		6.00 ,
+S	Philly		7.00 ,
+S	Alaskan	     7.00 ,
+KS    Shr Tem  8.00,
+KS    Park Ave Mk  8.00,
+KS    Veg Mk     5.00,
+KS    Sweetpotato   5.00,
+KS    Asp       5.00,
+S    Avocado   5.00,
+S    Cucumber  5.00,
+S    Tuna Mk       8.00,
+S    Salmon Mk     7.00,
+S    Eel Mk        7.00
+S    Yellowtail Mk  7.00,
+S    Andrew Sp Tuna 8.00,
+S    Andrew Sp Yellowtail 7.00,
+X
+X
+***6 Maki B
+KS	Spider        10.00 ,
+S    Scorpion      10.00,
+S	Caterpillar		10.00 ,
+KS	Dragon Eel		12.00 ,
+S    Godzilla       12.00,
+S	Rainbow	 	12.00 ,
+S    Tiger Eye      12.00,
+S	Torch Mk		12.00,
+S	Baba Mk		12.00 ,
+KS	Fancy Mk		12.00 ,
+S    Peacock Mk    12.00,
+KS   Rock&Roll MK  12.00,
+KS   Angel Mk       14.00,
+KS   Butterfly Mk   14.00,
+S    Dragon's Breath Mk   14.00,
+KS   Lucky Jade Mk    14.00,
+KS   Spiderman Mk  14.00,
+S    Volcano         14.00,
+S    Holiday Mk     16.00,
+KS   Celtic Mk       16.00,
+KS   Crown Mk        16.00,
+S    Cucumber Sashimi  16.00,
+S    Double Toro Mk  16.00,
+KS   Dragonfly Mk   16.00,
+KS   Green Fire Mk  16.00,
+S    King Mk        16.00,
+S    Lion King Mk  16.00,
+KS   Ocean's Heart Mk 16.00,
+S    Spicy Toro Mk   16.00,
+S    Sushi Sandwich  16.00,
+KS   Wishing Mk     16.00,
+
+
+
+X
+KS   Queen Mk    14.00,
+S    Dinosaur Mk  14.00,
+S    Salmon Skin  5.25,
+S    Kani Cali 14.00,
+S    Johnny Mk     12.00,
+S    2010 Maki        14.00,
+S    Valentine's Maki 16.00,  
+KS   Surf Turf Maki 16.00,
+KS   Haru maki   16.00,
+KS   Crazy Maki  16.00,
+S    Midori Maki  18.00,
+S    Oishi Maki  15.00,
+X
+X
+***7 Sake
+B    Gekkeikan hot  8.50,
+B    Gekkeikan Cold 8.50,
+B    Saki Bomb          5.00,
+B    Sake Shot     3.00,
+B    Saki Sampler      18.00,
+B    Flower caf   19.00,
+B    Flower blt   46.00,
+B    Flower Shot  6.00,
+B    Wandering poet caf          19.00,
+B    Wandering poet blt          59.00,
+B    Wandering poet Shot           7.00,
+B    Ths Drunk Whale caf  18.00,
+B    Ths Drunk Whale blt   54.00,
+B    Ths Drunk Whale shot  6.00,
+B    Snow Maiden caf 15.00,
+B    Snow Maiden btl  38.00,
+B    Snow Maiden shot  6.00,
+B    Living Jewel caf 15.00,
+B    Living Jewel btl 38.00,
+B    Living Jewel shot 6.00,
+B    Plum Caf     15.00,
+B    Plum btl     38.00,
+B    Plum Shot    6.00,
+B    Bushido     10.00,
+X
+X
+X
+X
+X
+***8 Soup Rice
+K   Miso soup      3.00,
+K   Steam rice     2.75,
+S   Sushi rice      3.00,
+S   Black rice     5.00,
+K   Fried rice      6.50,
+S   Unagi Don       22.00,
+K   Udon Soup Sm    6.00,
+K   Udon Soup Lg    8.00,
+K   Ebi Soup       8.00,
+K   Mixed Rice    3.50,
+K   Ginger Dressing 5.00,
+K   Ginger Dressing 8.00,
+K   Ginger Dressing 18.00,
+X
+X
+X
+X
+X
+
+
+***9  Salad
+K   Mixed Green       5.00,
+KS  Baba Salad        12.00,  
+S   Seaweed salad     6.00,
+S   Avo Crab Salad    15.00,
+S   Sp Seafood  Salad    12.00,
+S   Cuc Squid Salad     9.00,
+S   Chef's Salad Sampler  12.00,
+S   Sp Jellyfish Salad  9.00,
+
+X
+X
+X
+X
+X
+
+
+***10 Tori Tori
+K   Yaki Tori (chx) 7.00,
+K  Gyu Niku Tori ( beef)   7.00,
+KS  Hotate Tori (scollop)   8.00,
+KS   Sake Tori (salmon)    8.00,
+K   Veg Tori               6.00,
+K   Asian Stir Fry     19.00,
+K   Ginger Chx     19.00,
+K   Chx teri Baba        19.00,
+KS  Atlantic Salmon      24.00,
+X
+X
+K   Veg Udon Stir fry     14.00,
+K   Plain Udon W Sauce  6.00,
+K   Plain Udon W/O Sauce 5.00,
+K   Steam Veg        6.50,
+K   Stir Fried Veg   7.50,
+X
+X
+X
+X
+X
+X
+X
+***11 Dessert
+K    Banana Flambay  7.95,
+K    Chocolate Cake 8.50,
+K    KeyLime Cheesecake 8.50,
+K    Ginger Ice Cream 6.50,
+K    Coconut Ice Cream 6.50,
+
+
+S
+S
+***12  Special Cocktail
+
+B   Happy Shot   6.00,
+B   Cho cake shot  6.00,
+B   Yeger bomb  6.00,
+B   Bj Shot  6.00,
+B   Carrot cake 6.00,
+B   Aloe Martini 9.50,
+B   Almond Joy 9.50,
+B   Banana Martini 9.50,
+B   Blue Hawaii 8.50,
+B   Blue Lemonade  8.50,
+B   Blue Mist 9.00,
+B   Blueberrytini 9.50,
+B   Captain's Maiden  9.00,
+B   Caribbean Coconut 8.75,
+B   Cuc Martini  9.50,
+B   Diablo's Brew 9.75,
+B   Equinox   9.75,
+B   Espresso Martini 10.00,
+B   Flirtini  9.75,
+B   KeyLime   9.50,
+B   Lavender Gin 9.25,
+B   Lychee Martini 9.50,
+B   Mango Maitai 8.75,
+B   Mango Pomatini 9.50,
+B   Midnight Pineapple 9.50,
+B   MoMo Martini  10.25,
+B   Moscow Mule   9.25,
+B   Plum Martini 9.50,
+B   Ruby Red  9.75,
+B   Rosemary Whisky  9.75,
+B   Sake Sangria 9.75,
+B   Sake Martini 9.75,
+B   Sake Lemonade 8.50,
+B   Samurai  10.75,
+B   Simple Martini 10.00,
+B   Sparkling Pear 9.50,
+B   Passionfruit Magarita  10.25,
+B   Yumi Martini  10.00,
+B   White Chocolate Martini  9.75,
+B   Wasabi Bloody Mary  10.25,
+B   Vanilla Orange Blosom 9.25,
+B   Xuan Xuan 10.25,
+B   Fruit Ginger Cooler 9.75,
+B   Lemon Sorbet Martini 9.75,
+B   Baba Tropical Punch  8.50,
+
+
+
+X
+X
+X
+X
+X
+X
+X
+X
+X
+***14 Gluten Free
+
+
+S 
+X
+X
+X
+X
+X
+***15 Beer 
+B   Harpoon  5.00, 
+B   Sam Adams drf 5.50,
+B   Blue Moon  5.00,
+B   Guiness can 6.00,
+B   Angry Orc   4.50,
+B   Peak Organic 6.00,
+B   Bud light 4.50,
+B   Heineken      4.75,
+B   Corona        4.75,
+B   Asahi Dry     4.95,
+B   Sap (L)       8.95,
+B   Harpoon Mango 4.75,
+B   
+B 
+B  
+B 
+B  
+B
+B
+X
+***16 Wine 
+B   Mason Cellars Sauv Blanc 20.00,
+B   La Chablisienne Chard  22.00,
+B   Clos du Val Cab  28.00,
+B   Pinot Borgo gls 9.00,
+B   Pinot Borgo btl 27.00,
+B   Pinot Gri gls 10.00,
+B   Pinot Gri btl 30.00,
+B   S blanc Oyster gls 9.00,
+B   S blanc Oyster  btl 27.00,
+B   S blanc Tohu gls 10.00,
+B   S blanc Tohu btl 30.00,
+B   Riesling gls 8.00,
+B   Riesling  btl 24.00,
+B   Chard Hugh Hamilton gls 8.00,
+B   Chard Hugh Hamilton  btl 24.00,
+B   Chard J Lohr gls 9.00,
+B   Chard J Lohr btl 27.00,
+B   Pinot N Murphy gls 8.00,
+B   Pinot N Murphy btl 24.00,
+B   Pinot N cycles gls 9.00,
+B   Pinot N cycles btl  27.00,
+B   Angline Merlot gl 9.00,
+B   Angline Merlot btl 27.00,
+B   Red Zin Whiplash gls 9.00,
+B   Red Zin Whiplash btl 27.00,
+B   Malbec La Posta gls 11.00,
+B   Malbec La Posta btl 33.00,
+B   Cab McManis gls 8.00,
+B   Cab McManis btl 24.00,
+B   Perrier Brut btl     95.00,
+B   N Feuillate Brut btl 59.00,
+B   Lunetta Prosecco btl 26.00,
+B   Veuve du vernay  btl 8.00,
+B   Grgich Hill Zinfandel  32.00,
+B   Siverado Cab   38.00,
+B   Grgich Chard   79.00,
+B   Grgich Hill Cab  101.00,
+B   Cape Bleue Rose gls 8.00,
+B   Cape Bleue Rose btl  24.00, 
+
+B   
+B  
+B   
+X
+X
+X
+X
+X
+***17 Daily Special
+KS   Zesty  MK    12.00,
+S   Valentine's MK 16.00,
+
+***18 Beverage
+B   Coke    2.50,
+B   Diet Coke  2.50,
+B   Soda     2.50,
+B   Tonic   2.50,
+B   Sprite      2.50,
+B   Sh Temple  2.50,
+B   Iced Tea    2.50,
+B   Ginger Ale  2.50,
+B   Lemonade    2.50,
+B   Cranberry Juice 2.50,
+B   OJ       4.75,
+B   Pineapple 4.75,  
+B   Mixed Juice 4.95,
+B   Aloe Juice   4.75,
+B   Watermelon Juice  4.75,
+B   Lychee Juice     4.75,
+B   Mango Juice   4.75,
+B   Pama Juice    4.75,
+B   Milk        2.75,
+B   Tea     2.75,
+B   Tea Pot 5.50,
+B   Coffee   2.95,
+B   Coffee Drink  8.50,
+B   Voss still   3.95,
+B   Voss sparkling 3.95,
+B   Voss Lemon Cuc 3.95,
+B   Voss Tangerine  3.95,
+B   Ginger Beer    3.75,
+B   Sm Soda     2.50,  
+X
+X
+X
+***19 Certificate (NoTax)
+B   Certificate     M/P,
+X
+X
+X
+***20  Open
+KS  OpenFood                  M/P,
+S   SpicyMayo                 1.00,
+S   EelSauce                  1.00,
+K   Dumpling Sauce            1.00,
+K   Calamari Sauce            1.00,
+S   Honey Wasabi Sauce        1.00,
+S   Miso Wasabi Sauce         1.00,
+S   Mango Salsa Sauce         2.00,
+S   Honey peanut Sauce        1.00,
+S   Tempura Sauce             1.00,
+K   Tabasco Sauce             1.00,
+S   Ponzu sauce               1.00,
+S   Yuzu Sauce                1.00,
+S   Chili Sauce               1.00,
+K   Teriyaki sauce            1.50,
+k   Tori Sauce                1.50,
+K   Wasabi Shrimp sauce       2.00,
+S   Add Soywrap               1.00,
+S   Add Black Rice            2.00,
+B   Add Myer's float          2.00,
+B   OpenDrink                 M/P,
+KS   OpenSushi                 M/P,
+B   Special Martini  M/P,
+B   Martini          9.75,
+B   Martini Up       M/P,
+B   Mixed Drink              8.50,
+B   Magarita                9.75,
+B   Certificate               M/P,
+KSB   Don't  Make it           0,
+KS   SeeServer                 0,
+KS   Wait                     0,
+X
+KS   _________              0,
+KS  Allergy To  0,
+KS  Seafood Allergy 0,
+KS  Shellfish Allergy  0,
+KS  Gluten Allergy  0,
+KS  Nuts Allergy  0,
+KS  Avocado Allergy  0,
+KS  
+X
+X
+X
+
+***21   Bar   ABC
+B       Abs          8.50,
+B       Abs Citron   8.50,
+B       Abs Vanilia 8.50,
+B       Abs Mandarin  8.50,    
+B       Abs Blk Russ    8.50,
+B       Abs Martini      9.75,
+B       Abs Wht Russ     8.50,
+B       Ameretto           8.50, 
+B       Ardbeg  15.00, 
+B       Aviation Martini  10.00,
+B       B & B             8.50, 
+B       Banana Martini   9.50,
+B       Baba pomatini      9.25,
+B       Baileys           8.50,
+B       Bacardi            8.50,
+B       Baybreeze       8.50,
+B       Blue Howaii    8.50,
+B       Black Russian   8.50,
+B       Bombay       8.50,
+B       Bombay Martini 9.50,
+B       Bombay Sapphire  9.00,
+B       Bombay Sapphire Martini 12.00,
+B       Bowmore 3oz  33.00,
+B       Bulleit 12.00,
+B       Belvedere    9.00,
+B       Belvedere Martini up  12.00,
+B       Beefeater            8.50,
+B       Beefeater Martini up  9.75,
+B       Black Russian        8.50,
+B       Bloody Mary          8.50,
+B       California Sunset    8.50,
+B       Canadian Club        7.50,
+B       Canadian Club Manhattan 9.25,
+B       Captain 	     8.50,
+B       Chocolate Martini  9.50,
+B       Cointreau     8.50,
+B       Corrajelo   9.50,
+B       Corrajelo  Magarita 10.50,
+B       Chopin 9.50,
+B       Chopin Martini 12.00,
+B       Chambord    8.50,
+B       Chivas Regal       9.00,  
+B       Crown Royal        8.50,
+B       Crown Royal Manhattan 10.50,
+X
+X
+X
+***22  Bar DEFGHIJK
+
+B       Dalwhinnie 15yrs 25.00,
+B       Dark & Stormy  9.00,
+B       Dewars W Label   8.50,
+B       Disaronno   9.00,
+B       Drambuie       8.50,
+B       Espolon        8.50,
+B       Espolon Margarita 9.75,
+B       Espolon Shot  6.00,
+B       French Martini    9.50,
+B       Frangelico    8.50,
+B       Gin House          6.50,
+B       Gin Martini house  8.75,
+B       Glenfidich         0.00,
+
+B       Glenmorgane    13.00,   
+B       GodFather      9.50,     
+B       Grand Marnier   9.00, 
+B       Grape Crush  8.50, 
+B       Grateful Dead 8.50, 
+B       Greenapple Martini 9.50,     
+B       Grey Goose 9.00,
+B       Grey G Martini up 12.00
+B       Grey G org 9.00,   
+B       Grey G Citron  9.00,  
+B       Hennessy	     12.00,
+B       Hennessy shot  7.00,
+B       Hendrick's    9.00,
+B       Hendrick's Martini 12.00,
+B       Hot Toddy   8.50,
+B       Irish Coffee     8.50,     
+B       Jagermeister  8.50,
+B       Jack D      8.50,
+B       Jack D Manhattan 10.00,
+B       Jim Beam       8.50,
+B       Jameson        9.00,
+B       Jose      8.50,
+B       J Walker Blk 3oz     10.00,
+B       J Walker  Green 3oz   18.00,
+B       J Walker Plt 3oz      22.00,
+B       J Walker  Blue  3oz   40.00,
+B       Knob Creek            12.00,
+B       Knob Creek Manhattan  12.00,
+B       Knob Creek Shot    7.00,
+B       Kahlua           8.50,
+B       Kamikaze             9.50,
+B       Ketel One            9.00,
+B       Ketel 1 Martini   12.00,
+
+
+***23  Bar LM NOPQRS
+
+B       Laphroaig 3oz     15.00,
+B       Lemoncello         8.50,
+B       Lemon Drop Martini   9.50,
+B       Long Island Iced Tea  8.50,
+B       Madras                8.50,
+B       Malibu                8.50,
+B       Mai Tai             8.50,
+B       Maker's Mark    9.00,
+B       Maker's Mark Manhattan 12.00,
+B       Margarita House  7.50,
+B       Midori               8.50,
+B       Mojito              8.75,
+B       Mojito Grapefruit    9.00,
+B       Mojito Banana        9.00,
+B       Mojito Peach         9.00,
+B       Mango Blueberry    9.50,
+B       Myer's Rum          9.00,
+B       Monkey Shoulder 3oz 10.50, 
+B       Old Fasion Jack     9.25,
+B       Old Fasion Maker    10.00,
+B       Old Fasion Crown    9.25,
+B       Patron Silver Magarita 12.00,
+B       Patron Silver 3oz 12.00,
+B       Patron Silver Shot 2oz 10.00,
+B       Patron Gold 3oz 15.00,
+B       Patron Gold Shot 12.00,
+B       Patron Coffee Shot 2oz 6.50,
+B       Patron Coffee 3oz 8.00,
+B       Pomegranate Martini    9.50,            
+B       Pearl Harbor       8.50,
+B       Pyrat Rum          8.50,
+B       Rum Dark house     6.50,
+B       Rum White house   6.50,
+B       Rum Runner    8.50,
+B       Sangria         9.75,
+B       Side Car           9.25,
+B       S Comfort           8.50,
+B       S Comfort Manhattan  9.75,
+B       Sambuca Romana        8.50,
+B       Sambuca Black         8.50,
+B       Sex On The Beach       8.50,
+B       Scorpion Bowl(1)      9.50,
+B       Scorpion Bowl(2)      17.50,
+B       Screwdriver           8.50
+B       Sea Breeze            8.50,
+
+
+X
+X
+X
+
+
+***24 Bar STUV WXYZ
+B       Seagram's 8.50,
+B       Seagram's VO   8.50,
+B       Skyy Ginger        8.50,
+B       Skyy Grape         8.50,
+B       Skyy Martini       9.25,
+B       Stolichnaya         9.00,
+B       Stoli Martini      10.00,
+B       Stoli Raz     9.00,
+B       Stoli blueberi     9.00,
+B       Tanquray   8.50,
+B       Tanquray Martini 9.75,
+B       Tequila Sunrise        8.50,
+B       Tequila Jose Cueruo    8.50,
+B       Tito's   8.50,
+B       Tito's Martini 9.75,
+B       Toasted Almond  8.50,
+B       Tuaca Shot   6.00,
+B       Tuaca 3oz    8.50,
+B       Vodka House     6.50,
+B       Vodka Martini house 8.75,
+B       Wa Apple Martini 9.75,
+B       Whisky house   6.50,  
+B       White Chocolate Martini 9.50,
+B       White Russian        8.50,   
+B       Wild Turkey          9.00,
+B       Woodford Reserve   12.00,
+B       Yamazaki 12yr 3oz  28.00,
+
+B       Zombie              8.50,
+X
+X
+***  Extra
+S       Sake On Fire 14.00,
+S       Kokonattsu   12.00,
+KS     Smoldering Lob 14.00,
+S       Sunsational Maki 16.00,
