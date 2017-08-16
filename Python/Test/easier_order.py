@@ -12,6 +12,9 @@ type_dish_list = []
 sub_dish_list = []
 dish_id_list = []
 
+email = 'sichuangourmet@order.com'
+token =  'a6f38f2b-a83d-440d-a86e-8de6a1f0bbb2'
+
 def get_data(file_name):
 
     print 'start read data %r', time.time()
@@ -54,12 +57,12 @@ def post_types(type_id_file_name):
 
         url = 'http://www.easierorder.com:3080/api/v1/res/addFoodType'
         add_type_payload = {
-            'email': 'sichuan@order.com',
+            'email': email,
             'foodType': {
                 'sortNum': 0,
                 'name': type_name
             },
-            'token': 'c5771a76-51a2-4e3d-ad25-13845c383d1e',
+            'token': token,
         }
 
         headers = {'content-type': 'application/json'}
@@ -75,7 +78,7 @@ def post_types(type_id_file_name):
         file.close()
         pass
 
-def post_dishes(dish_id_file_name='dishid.txt', type_id_file_name = 'typeid.txt'):
+def post_dishes(dish_id_file_name, type_id_file_name):
 
     type_id_list = []
 
@@ -170,7 +173,7 @@ def close_dish(dish_id_file_name):
 
     print 'close dishes finish %r',time.time()
 
-def del_dish(dish_id_file_name = 'dishid.txt'):
+def del_dish(dish_id_file_name):
 
     print 'start delete dishes %r', time.time()
 
@@ -201,8 +204,14 @@ def del_dish(dish_id_file_name = 'dishid.txt'):
 
 if __name__ == '__main__':
 
-    file1 = 'res1.txt'
-    file2 = 'res2.txt'
-    get_data(file1)
-    post_dishes()
+    res1_file = 'res1.txt'
+    res2_file = 'res2.txt'
+    res1_type_id_file = 'typeidres1.txt'
+    res2_type_id_file = 'typeidres2.txt'
+    res1_dish_id_file = 'dishidres1.txt'
+    res2_dish_id_file = 'dishidres2.txt'
+
+    get_data(res2_file)
+    # post_types(res2_type_id_file)
+    post_dishes(res2_dish_id_file, res2_type_id_file)
     #del_dish()
