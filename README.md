@@ -1,3 +1,3 @@
 # Learning
 
-It is never to late to start.
+It is never too late to start.
