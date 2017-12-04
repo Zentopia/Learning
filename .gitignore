@@ -219,3 +219,4 @@ ENV/
 
 # mypy
 .mypy_cache/
+/TimeSeries/.idea
