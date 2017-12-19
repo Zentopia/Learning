@@ -9,10 +9,9 @@ from pandas import DataFrame
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error
 from math import sqrt
-import pandas as pd
-import numpy as np
 import sys
 from sklearn.cluster import KMeans
+from sklearn import preprocessing
 
 
 df = pd.read_csv('user_balance_table_all.csv', index_col='user_id', names=['user_id', 'report_date', 'tBalance', 'yBalance', 'total_purchase_amt', 'direct_purchase_amt', 'purchase_bal_amt', 'purchase_bank_amt', 'total_redeem_amt', 'consume_amt', 'transfer_amt', 'tftobal_amt', 'tftocard_amt', 'share_amt', 'category1', 'category2', 'category3', 'category4'
@@ -33,7 +32,7 @@ from copy import deepcopy
 import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
-plt.rcParams['figure.figsize'] = (16, 9)
+plt.rcParams['figure.figsize'] = (100, 100)
 plt.style.use('ggplot')
 
 
@@ -41,26 +40,27 @@ plt.style.use('ggplot')
 f1 = df['total_purchase_amt']
 f2 = df['total_redeem_amt']
 X = np.array(list(zip(f1, f2)))
-plt.scatter(f1, f2, c='black', s=1)
+plt.scatter(f1, f2, c='red', s=1)
+X_scaled = preprocessing.scale(X)
+print(X_scaled)
 
-print(X)
-
-'''
-==========================================================
-scikit-learn
-==========================================================
-'''
 
 from sklearn.cluster import KMeans
 
 # Number of clusters
-kmeans = KMeans(n_clusters=6)
+kmeans = KMeans(n_clusters=3)
 # Fitting the input data
-kmeans = kmeans.fit(X)
+kmeans = kmeans.fit(X_scaled)
 # Getting the cluster labels
-labels = kmeans.predict(X)
+labels = kmeans.predict(X_scaled)
 # Centroid values
 centroids = kmeans.cluster_centers_
 
-print(centroids) # From sci-kit learn
+# colors = ['r','b','y']
+# plt.scatter(f1, f2, color=[colors[l_] for l_ in labels], label=labels)
+# plt.scatter(centroids[:, 0], centroids[:, 1], color=[c for c in colors[:len(centroids)]], marker = "x", s=150, linewidths = 5, zorder = 10)
+
 plt.show()
+
+
+print(centroids) # From sci-kit learn
