@@ -9,7 +9,6 @@ from pandas import DataFrame
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error
 from math import sqrt
-import pandas as pd
 import numpy as np
 import sys
 
@@ -53,7 +52,7 @@ def _proper_model(ts_log_diff, maxLag):
                 best_q = q
                 best_bic = bic
                 best_model = results_ARMA
-    return best_p,best_q,best_model
+    return best_p, best_q, best_model
 
 df = pd.read_csv('user_balance_table_all.csv', index_col='user_id', names=['user_id', 'report_date', 'tBalance', 'yBalance', 'total_purchase_amt', 'direct_purchase_amt', 'purchase_bal_amt', 'purchase_bank_amt', 'total_redeem_amt', 'consume_amt', 'transfer_amt', 'tftobal_amt', 'tftocard_amt', 'share_amt', 'category1', 'category2', 'category3', 'category4'
 ], parse_dates=[1])
@@ -62,23 +61,25 @@ df['report_date'] = pd.to_datetime(df['report_date'], errors='coerce')
 df['total_purchase_amt'] = pd.to_numeric(df['total_purchase_amt'], errors='coerce')
 df['total_redeem_amt'] = pd.to_numeric(df['total_redeem_amt'], errors='coerce')
 df['purchase_bank_amt'] = pd.to_numeric(df['purchase_bank_amt'], errors='coerce')
+df['direct_purchase_amt'] = pd.to_numeric(df['direct_purchase_amt'], errors='coerce')
 
 
 df = df.groupby('report_date').sum()
-df['t-b'] = df['total_purchase_amt'] - df['purchase_bank_amt']
+ts = df['total_purchase_amt']
 
-df['t-b'].plot()
-print(df['t-b'])
-plt.show()
-# df.groupby('report_date')['total_redeem_amt'].sum().plot()
-# differenced = ts.diff(1)
-# differenced = differenced[1:]
+# plt.figure(num=None, figsize=(8, 12), dpi=100, facecolor='w', edgecolor='k')
+
+differenced = ts.diff(1)
+
+differenced = differenced[1:]
+
 # test_stationarity(differenced)
-# differenced.plot()
-# plt.show()
-# differenced.to_csv('total_purchase_amt_adjusted.csv')
+differenced.plot()
+plt.title('total_purchase_amt first difference')
+plt.show()
+a =1
 
-# #Plot ACF:
+#Plot ACF:
 # plt.subplot(121)
 # plt.plot(lag_acf)
 # plt.axhline(y=0,linestyle='--',color='gray')
@@ -95,13 +96,12 @@ plt.show()
 # plt.title('Partial Autocorrelation Function')
 # plt.tight_layout()
 # plt.show()
-
-# plt.figure()
-# plt.subplot(211)
+#
 # plt.axhline(y=-1.96/np.sqrt(len(differenced)),linestyle='--',color='gray')
 # plt.axhline(y=1.96/np.sqrt(len(differenced)),linestyle='--',color='gray')
 # plot_acf(differenced, ax=plt.gca(), lags=20)
-# plt.subplot(212)
+# plt.show()
+#
 # plt.axhline(y=-1.96/np.sqrt(len(differenced)),linestyle='--',color='gray')
 # plt.axhline(y=1.96/np.sqrt(len(differenced)),linestyle='--',color='gray')
 # plot_pacf(differenced, ax=plt.gca(), lags=20)
@@ -109,28 +109,29 @@ plt.show()
 
 # _proper_model(differenced, 9)
 
-# model = ARIMA(ts, order=(1, 1, 0))
-# results_AR = model.fit(disp=-1)
-# plt.plot(differenced)
-# plt.plot(results_AR.fittedvalues, color='red')
-# plt.title('RSS: %.4f'% sum((results_AR.fittedvalues-differenced)**2))
-# plt.show()
-#
-# model = ARIMA(ts, order=(0, 1, 1))
-# results_MA = model.fit(disp=-1)
-# plt.plot(differenced)
-# plt.plot(results_MA.fittedvalues, color='red')
-# plt.title('RSS: %.4f'% sum((results_MA.fittedvalues-differenced)**2))
-# plt.show()
+model = ARIMA(ts, order=(1, 1, 0))
+results_AR = model.fit(disp=-1)
+plt.plot(differenced)
+plt.plot(results_AR.fittedvalues, color='red')
+plt.title('RSS: %.4f'% sum((results_AR.fittedvalues-differenced)**2))
+plt.show()
+
+model = ARIMA(ts, order=(0, 1, 1))
+results_MA = model.fit(disp=-1)
+plt.plot(differenced)
+plt.plot(results_MA.fittedvalues, color='red')
+plt.title('RSS: %.4f'% sum((results_MA.fittedvalues-differenced)**2))
+plt.show()
 
 
-#
-# model = ARIMA(ts, order=(8, 1, 4))
-# results_ARIMA = model.fit(disp=-1)
-# plt.plot(differenced)
-# plt.plot(results_ARIMA.fittedvalues, color='red')
-# plt.title('RSS: %.4f'% sum((results_ARIMA.fittedvalues-differenced)**2))
-# plt.show()
+
+model = ARIMA(ts, order=(1, 1, 1))
+results_ARIMA = model.fit(disp=-1)
+plt.plot(differenced)
+plt.plot(results_ARIMA.fittedvalues, color='red')
+plt.title('RSS: %.4f'% sum((results_ARIMA.fittedvalues-differenced)**2))
+plt.show()
+
 #
 # predictions_ARIMA_diff = pd.Series(results_ARIMA.fittedvalues, copy=True)
 # print (predictions_ARIMA_diff.head())
