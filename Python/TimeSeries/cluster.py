@@ -62,5 +62,4 @@ centroids = kmeans.cluster_centers_
 
 plt.show()
 
-
 print(centroids) # From sci-kit learn
