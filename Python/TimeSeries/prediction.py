@@ -116,12 +116,12 @@ plt.show()
 plt.figure()
 plt.axhline(y=-1.96/np.sqrt(len(ts_diff_1)),linestyle='--',color='gray')
 plt.axhline(y=1.96/np.sqrt(len(ts_diff_1)),linestyle='--',color='gray')
-plot_acf(ts_diff_1, ax=plt.gca(), lags=20)
+plot_acf(ts_diff_1, ax=plt.gca(), lags=60)
 plt.show()
 
 plt.axhline(y=-1.96/np.sqrt(len(ts_diff_1)),linestyle='--',color='gray')
 plt.axhline(y=1.96/np.sqrt(len(ts_diff_1)),linestyle='--',color='gray')
-plot_pacf(ts_diff_1, ax=plt.gca(), lags=20)
+plot_pacf(ts_diff_1, ax=plt.gca(), lags=60)
 plt.show()
 
 from statsmodels.tsa.arima_model import ARMA
