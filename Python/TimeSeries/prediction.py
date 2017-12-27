@@ -1,14 +1,7 @@
 import matplotlib.pylab as plt
 import pandas as pd
-from statsmodels.tsa.arima_model import ARIMA
-from statsmodels.tsa.arima_model import ARMA
 from statsmodels.tsa.stattools import adfuller
 from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
-from pandas import Series
-from pandas import DataFrame
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.metrics import mean_squared_error
-from math import sqrt
 import numpy as np
 import sys
 
