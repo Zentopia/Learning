@@ -13,5 +13,13 @@ for label in labels:
 
 df = df.groupby('mfd_date').sum()
 ts = df['mfd_7daily_yield']
-ts.plot()
+ts.plot(color='blue', label='mfd_7daily_yield')
+
+tsd = df['mfd_daily_yield']
+tsd.plot(color='red', label='mfd_daily_yield')
+plt.legend(loc='best')
+plt.title('mfd day share interest')
+
 plt.show()
+
+
