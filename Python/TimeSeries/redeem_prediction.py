@@ -86,7 +86,7 @@ def proper_model(ts_log_diff, maxLag):
                 best_model = results_ARMA
     print(best_p,best_q,best_model)
 
-df = pd.read_csv('user_balance_table_all.csv', index_col='user_id', names=['user_id', 'report_date', 'tBalance', 'yBalance', 'total_purchase_amt', 'direct_purchase_amt', 'purchase_bal_amt', 'purchase_bank_amt', 'total_redeem_amt', 'consume_amt', 'transfer_amt', 'tftobal_amt', 'tftocard_amt', 'share_amt', 'category1', 'category2', 'category3', 'category4'
+df = pd.read_csv('./file/user_balance_table_all.csv', index_col='user_id', names=['user_id', 'report_date', 'tBalance', 'yBalance', 'total_purchase_amt', 'direct_purchase_amt', 'purchase_bal_amt', 'purchase_bank_amt', 'total_redeem_amt', 'consume_amt', 'transfer_amt', 'tftobal_amt', 'tftocard_amt', 'share_amt', 'category1', 'category2', 'category3', 'category4'
 ], parse_dates=[1])
 
 df['report_date'] = pd.to_datetime(df['report_date'], errors='coerce')
@@ -95,15 +95,24 @@ df['total_redeem_amt'] = pd.to_numeric(df['total_redeem_amt'], errors='coerce')
 df['purchase_bank_amt'] = pd.to_numeric(df['purchase_bank_amt'], errors='coerce')
 
 df = df.groupby('report_date').sum()
-ts = df['total_purchase_amt']
-ts = ts['2013-07-01':'2014-04-01']
+ts = df['total_redeem_amt']
+# ts = ts['2014-04-01':'2014-06-30']
 
-print('原数据ADF')
-test_stationarity(ts)
+# print('原数据ADF')
+# test_stationarity(ts)
 
 ts.plot()
 plt.title('Redeem before April')
 plt.show()
+
+#一阶差分
+diff_1 = diff_ts(ts, [1])
+diff_1.plot()
+# plt.title('Total purchase first difference')
+plt.title('Total redeem first difference')
+
+plt.show()
+
 
 plt.figure()
 plt.axhline(y=-1.96/np.sqrt(len(ts)),linestyle='--',color='gray')
@@ -120,7 +129,6 @@ diff_1 = diff_ts(ts, [1])
 
 print('一阶差分数据ADF')
 test_stationarity(diff_1)
-
 
 plt.figure()
 plt.axhline(y=-1.96/np.sqrt(len(diff_1)),linestyle='--',color='gray')
@@ -160,9 +168,9 @@ plt.axhline(y=1.96/np.sqrt(len(ts_diff_1)),linestyle='--',color='gray')
 plot_pacf(ts_diff_1, ax=plt.gca(), lags=60)
 plt.show()
 
-# proper_model(ts_diff_1, 10)
+proper_model(ts_diff_1, 10)
 
-model = ARMA(ts_diff_1, order=(7, 7))
+model = ARMA(ts_diff_1, order=(0, 7))
 result_arma = model.fit(disp=-1, method='css')
 
 predict_ts = result_arma.predict()
@@ -181,8 +189,14 @@ rol_recover = recovery_diff_1*7 - rol_sum.shift(1)
 
 rol_recover.plot(label='predicted')
 ts.plot(label='original')
+
 plt.legend(loc='best')
 plt.show()
+
+ts = ts['2014-05-01':'2014-05-31']
+rol_recover = rol_recover['2014-05-01':'2014-05-31']
+print(ts)
+print(rol_recover)
 
 
 

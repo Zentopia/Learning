@@ -4,6 +4,7 @@ from statsmodels.tsa.stattools import adfuller
 from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
 import numpy as np
 import sys
+from statsmodels.tsa.arima_model import ARMA
 
 # 差分操作,d代表差分序列，比如[1,1,1]可以代表3阶差分。  [12,1]可以代表第一次差分偏移量是12，第二次差分偏移量是1
 def diff_ts(ts, d):
@@ -84,7 +85,7 @@ def proper_model(ts_log_diff, maxLag):
                 best_model = results_ARMA
     print(best_p,best_q,best_model)
 
-df = pd.read_csv('user_balance_table_all.csv', index_col='user_id', names=['user_id', 'report_date', 'tBalance', 'yBalance', 'total_purchase_amt', 'direct_purchase_amt', 'purchase_bal_amt', 'purchase_bank_amt', 'total_redeem_amt', 'consume_amt', 'transfer_amt', 'tftobal_amt', 'tftocard_amt', 'share_amt', 'category1', 'category2', 'category3', 'category4'
+df = pd.read_csv('./file/user_balance_table_all.csv', index_col='user_id', names=['user_id', 'report_date', 'tBalance', 'yBalance', 'total_purchase_amt', 'direct_purchase_amt', 'purchase_bal_amt', 'purchase_bank_amt', 'total_redeem_amt', 'consume_amt', 'transfer_amt', 'tftobal_amt', 'tftocard_amt', 'share_amt', 'category1', 'category2', 'category3', 'category4'
 ], parse_dates=[1])
 
 df['report_date'] = pd.to_datetime(df['report_date'], errors='coerce')
@@ -94,9 +95,12 @@ df['purchase_bank_amt'] = pd.to_numeric(df['purchase_bank_amt'], errors='coerce'
 
 df = df.groupby('report_date').sum()
 ts = df['total_purchase_amt']
-ts = ts['2014-04-01':'2014-06-29']
+ts = ts['2014-04-01':'2014-06-30']
 
 # test_stationarity(ts)
+ts.plot()
+plt.title('Redeem amount in three months')
+plt.show()
 
 rol_mean = ts.rolling(window=7).mean()
 rol_mean.dropna(inplace=True)
@@ -124,7 +128,6 @@ plt.axhline(y=1.96/np.sqrt(len(ts_diff_1)),linestyle='--',color='gray')
 plot_pacf(ts_diff_1, ax=plt.gca(), lags=60)
 plt.show()
 
-from statsmodels.tsa.arima_model import ARMA
 model = ARMA(ts_diff_1, order=(1, 7))
 result_arma = model.fit(disp=-1, method='css')
 
@@ -147,6 +150,10 @@ ts.plot(label='original')
 plt.legend(loc='best')
 plt.show()
 
+ts = ts['2014-05-01':'2014-05-31']
+rol_recover = rol_recover['2014-05-01':'2014-05-31']
+print(ts)
+print(rol_recover)
 
 
 
