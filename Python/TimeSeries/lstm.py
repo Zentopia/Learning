@@ -1,4 +1,3 @@
-
 import numpy
 import matplotlib.pyplot as plt
 from pandas import read_csv
@@ -8,18 +7,9 @@ from keras.layers import Dense
 from keras.layers import LSTM
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import mean_squared_error
-
-# load the dataset
-dataframe = read_csv('./file/international-airline-passengers.csv', usecols=[1], engine='python', skipfooter=3)
-dataset = dataframe.values
-# 将整型变为float
-dataset = dataset.astype('float32')
-
-plt.plot(dataset)
-plt.show()
+import pandas as pd
 
 # X is the number of passengers at a given time (t) and Y is the number of passengers at the next time (t + 1).
-
 # convert an array of values into a dataset matrix
 def create_dataset(dataset, look_back=1):
     dataX, dataY = [], []
@@ -29,13 +19,30 @@ def create_dataset(dataset, look_back=1):
         dataY.append(dataset[i + look_back, 0])
     return numpy.array(dataX), numpy.array(dataY)
 
+# # load the dataset
+# dataframe = read_csv('./file/international-airline-passengers.csv', usecols=[1], engine='python', skipfooter=3)
+# dataset = dataframe.values
+# dataset = dataset.astype('float32')
+# plt.plot(dataset)
+# plt.show()
+
+dataframe = read_csv('./file/user_balance_table_all.csv', usecols=[4], engine='python', skipfooter=3)
+dataset = dataframe.values
+print(dataset)
+dataset = dataset.astype('float64')
+plt.plot(dataset)
+plt.show()
+
+print(dataset)
+
 # fix random seed for reproducibility
 numpy.random.seed(7)
 
 # normalize the dataset
 scaler = MinMaxScaler(feature_range=(0, 1))
 dataset = scaler.fit_transform(dataset)
-
+print(dataset)
+print(dataset)
 
 # split into train and test sets
 train_size = int(len(dataset) * 0.67)
@@ -52,7 +59,7 @@ trainX = numpy.reshape(trainX, (trainX.shape[0], 1, trainX.shape[1]))
 testX = numpy.reshape(testX, (testX.shape[0], 1, testX.shape[1]))
 
 # create and fit the LSTM network
-model = Sequential()
+model = keras.Sequential()
 model.add(LSTM(4, input_shape=(1, look_back)))
 model.add(Dense(1))
 model.compile(loss='mean_squared_error', optimizer='adam')
